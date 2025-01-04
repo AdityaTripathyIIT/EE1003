@@ -25,7 +25,7 @@ gen.generate_points(
 
 fig = plt.figure()
 ax = plt.gca()
-plt.plot(points[:, 0], points[:, 1], c='r', label = "sim2")
+plt.plot(points[:, 0], points[:, 1], c='r',marker = "o", label = "sim2")
 x = np.linspace(0.0, 10, 1000)
 y = np.exp(-5*x)
 plt.plot(x, y, c='g', label = "theory")
@@ -35,7 +35,7 @@ gen.generate_points(
     points.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
     int(num_points/10)
 )
-plt.plot(points[:, 0], points[:, 1], c='b', label = "sim1")
+plt.plot(points[:, 0], points[:, 1], c='b', marker = "o", label = "sim1")
 '''
 ax.text(x1, y1, ' (5,4)', color='red', fontsize=12)
 ax.text(x2, y2, ' (9,-2)', color='green', fontsize=12)
