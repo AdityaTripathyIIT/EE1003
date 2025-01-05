@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.3)  4 JAN 2025 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.3)  5 JAN 2025 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1942,7 +1942,7 @@ blic/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (3 pages, 72121 bytes).
+Output written on main.pdf (3 pages, 72200 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

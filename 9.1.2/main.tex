@@ -88,11 +88,11 @@ Applying the unilateral Z-transform to both sides of equation,$\brak{\text{repre
 \end{align}
     \text{On comparison, $\alpha = \brak{1-5h}$, so the solution for $y_n$ is:}\\
 \begin{align}
-    y_n = y_0\brak{1-5h}^n\\
+    y_n = y_0\brak{1-5h}^nu\sbrak{n}\\
 \end{align}
     \text{Substituting $y_0 = 1$,}\\
 \begin{align}
-    y_n = \brak{1-5h}^n\\
+    y_n = \brak{1-5h}^nu\sbrak{n}\\
 \end{align}
 Now we can iteratively generate points which lie close to the graph.\\
 To check how close the approximate graph is to the actual solution, we will solve the original 
@@ -109,7 +109,7 @@ Let $\mathcal{L}\brak{y} = Y$\\
 \end{align}
     \text{Now, we take the inverse laplace transform to get a solution,}\\
 \begin{align}
-    \mathcal{L}^{-1}\brak{\frac{1}{s+5}} = e^{-5x}
+    \mathcal{L}^{-1}\brak{\frac{1}{s+5}} = e^{-5x}u\brak{x}
 \end{align}
 For the following approximate graph, I chose $h = 0.01$ and $h = 0.1$.
 \begin{figure}[h!]
