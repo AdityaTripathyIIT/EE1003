@@ -43,4 +43,4 @@ gen.free_ptr(points.ctypes.data_as(ctypes.POINTER(ctypes.c_double)))
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 plt.savefig('../figs/fig.png')
-
+plt.show()
