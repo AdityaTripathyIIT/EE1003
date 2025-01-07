@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <math.h>
-//function to generate points on a standard ellipse
+//function to generate points on a standard ellipse x^2/a^2 + y^/b^2 = 1
 void generate_points(double a, double b, double *points, int n) {
     double h = (2*a) / n;
     double x_0 = -a;
