@@ -71,39 +71,6 @@ Using Euler's Method, we represent the the differential equation in the followin
     y_{n+1} - y_n + 2hy_n  = h\sin x_n\\
     \xrightarrow{} y_{n+1} = \brak{1-2h}y_n + h\sin x_n
 \end{align}
-We can get the solution to the difference equation in $y$ using the unilateral Z-transform.
-Applying the unilateral Z-transform to both sides of equation,$\brak{\text{representing transform of $y_n$ with $Y\brak{z}$}}$ 
-\begin{align}
-    Y\brak{z} = \sum_{n=0}^{\infty}y_nz^{-n}\\
-\end{align}
-    \text{Therefore,}\\
-\begin{align}
-    zY\brak{z} - zy_0 &= \brak{1-2h}Y\brak{z} + hZ\brak{\cbrak{\sin x_n}}\\
-    \xrightarrow{} Y\brak{z}\brak{z - \brak{1-2h}} &= zy_0 + hZ\brak{\cbrak{\sin x_n}}\\
-    Y\brak{z} &= \frac{zy_0}{z-\brak{1-2h}} + \frac{h}{z-\brak{1-2h}}Z\brak{\cbrak{\sin x_n}}
-\end{align}
-    We know that the Z-transform has the following properties,\\
-    \begin{enumerate}
-        \item If the signal $x\sbrak{n}$ has Z-transform $X\brak{z}$, then Z-transform of $z^{-1}X\brak{z}$
-        \item If $X_1\brak{z}, X_2\brak{z}$ correspond to the Z-transforms of the signals $x_1\sbrak{n}, x_2\sbrak{n}$
-            then $X_1\brak{z}X_2\brak{z}$ corresponds to the Z-transform of $x_1\sbrak{n} \circledast x_2\sbrak{n}$, where 
-            $\circledast$ corresponds to the convolution operator
-    \end{enumerate}
-    
-    \text{Applying Inverse Z-transform, we notice}\\
-    \text{For the signal $x\sbrak{n} = \alpha^nu\brak{n}, \brak{u\sbrak{n} \text{being the unit step signal}}$}\\
-\begin{align}
-    X\brak{\alpha^nu\sbrak{n}} = \frac{1}{1-\alpha z^{-1}}, \text{provided $|z| < |\alpha|$}\\
-    \xrightarrow{} \brak{\alpha^{n-1}u\sbrak{n-1}} = \frac{1}{1-\alpha z^{-1}}, \text{provided $|z| > |\alpha|$}
-\end{align}
-    \text{On comparison, $\alpha = \brak{1-2h}$, so the solution for $y_n$ is:}\\
-\begin{align}
-    y_n = y_0\brak{1-5h}^nu\sbrak{n}
-\end{align}
-    \text{Substituting $y_0 = 1$,}\\
-\begin{align}
-    y_n = \brak{1-2h}^nu\sbrak{n} + h\sin x_n \circledast \brak{1-2h}^{n-1}u\sbrak{n-1}
-\end{align}
 Now we can iteratively generate points which lie close to the graph.\\
 To check how close the approximate graph is to the actual solution, we will solve the original 
 equation using a Laplace Transform method:\\
