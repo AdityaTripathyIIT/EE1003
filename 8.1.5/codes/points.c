@@ -19,12 +19,12 @@ void calc_area(double a, double b, int n, double *res) {
     double x_0 = -a;
     for (int i = 0; i < n; i++) {
         j_1 += (b *h * (sqrt(a*a - x_0*x_0) + sqrt(a*a - (x_0 + h)*(x_0 + h))));
-        x_0 += h;  // Correct increment of x_0
+        x_0 += h;  
     }
-    *res = j_1 / 2;  // Divide by 2 for trapezoidal rule correction
+    *res = j_1 / 2;  
 }
 
 void free_ptr(double *points) {
-    free(points);  // Ensure this is used correctly
+    free(points);  
 }
 
