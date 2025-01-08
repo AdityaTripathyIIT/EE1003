@@ -86,10 +86,10 @@ Applying Laplace Transform to both sides of the differential equation,
 \end{align}
     \text{Apply Bilinear Transform, with T = h}\\
 \begin{align}
-    s &= \frac{2}{T} \frac{1+z^{-1}}{1-z^{-1}}\\
-    Y\brak{z} &= \frac{2y_0\brak{1 + z^{-1}}}{2\brak{1 + z^{-1}} + 5h\brak{1 - z^{-1}}}\\
-    Y\brak{z} &= \frac{2y_0\brak{1 + z^{-1}}}{\brak{2+5h} - \brak{5h-2}z^{-1}}\\
-    \alpha &= \frac{5h-2}{5h+2}\\
+    s &= \frac{2}{T} \frac{1-z^{-1}}{1+z^{-1}}\\
+    Y\brak{z} &= \frac{2y_0\brak{1 - z^{-1}}}{2\brak{1 - z^{-1}} + 5h\brak{1 + z^{-1}}}\\
+    Y\brak{z} &= \frac{2y_0\brak{1 + z^{-1}}}{\brak{2+5h} + \brak{5h-2}z^{-1}}\\
+    \alpha &= -\frac{5h-2}{5h+2}\\
     Y &= \frac{2y_0}{5h+2}\brak{\frac{1}{1- \alpha z^{-1}} + \frac{z^{-1}}{1 - \alpha z^{-1}}}
 \end{align}
 Applying inverse Z-transform,
