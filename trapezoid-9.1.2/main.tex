@@ -73,10 +73,28 @@ $x_0 = 0, y_0 = 1$\\
 Using the trapezoidal rule,
 \begin{align}
     J &= \int_a^b f\brak{x}\, dx\\
-    \approx h\brak{\frac{1}{2}f\brak{x} + f\brak{x_1} + f\brak{x_2} \cdots + f\brak{x_{n-1}} + \frac{1}{2}f\brak{b}}\\
+    &\approx h\brak{\frac{1}{2}f\brak{x} + f\brak{x_1} + f\brak{x_2} \cdots + f\brak{x_{n-1}} + \frac{1}{2}f\brak{b}}\\
     \frac{y_{n+1} - y_n}{1}\brak{\frac{1}{2} + \frac{1}{2}}
     &= -5\frac{x_{n+1} - x_{n}}{1}\brak{\frac{y_n}{2} +\frac{y_{n+1}}{2}} \\ 
     \xrightarrow{} y_{n+1} &= \frac{\brak{2-5h}y_n}{5h+2} 
+\end{align}
+Another way we can arrive at the differnce equation is by using the Bilinear transform,\\
+Applying Laplace Transform to both sides of the differential equation,
+\begin{align}
+    sY - sy_0 + 5Y &= 0\\
+    Y\brak{s} &= \frac{sy_0}{s+5}\\
+\end{align}
+    \text{Apply Bilinear Transform, with T = h}\\
+\begin{align}
+    s &= \frac{2}{T} \frac{1+z^{-1}}{1-z^{-1}}\\
+    Y\brak{z} &= \frac{2y_0\brak{1 + z^{-1}}}{2\brak{1 + z^{-1}} + 5h\brak{1 - z^{-1}}}\\
+    Y\brak{z} &= \frac{2y_0\brak{1 + z^{-1}}}{\brak{2+5h} - \brak{5h-2}z^{-1}}\\
+    \alpha &= \frac{5h-2}{5h+2}\\
+    Y &= \frac{2y_0}{5h+2}\brak{\frac{1}{1- \alpha z^{-1}} + \frac{z^{-1}}{1 - \alpha z^{-1}}}
+\end{align}
+Applying inverse Z-transform,
+\begin{align}
+    y_n &= \frac{2y_0}{5h+2} \brak{\alpha ^n u\sbrak{n} + \alpha^{n-1}u\sbrak{n-1}}\\  
 \end{align}
 To check how close the approximate graph is to the actual solution, we will solve the original 
 equation using a Laplace Transform method:\\
