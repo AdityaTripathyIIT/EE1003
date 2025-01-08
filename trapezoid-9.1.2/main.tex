@@ -96,6 +96,10 @@ Applying inverse Z-transform,
 \begin{align}
     y_n &= \frac{2y_0}{5h+2} \brak{\alpha ^n u\sbrak{n} - \alpha^{n-1}u\sbrak{n-1}}\\  
     y_n &= \frac{2y_0}{5h+2}\alpha^{n-1}\brak{\alpha - 1}\\
+    y_{n+1} &= \frac{2y_0}{5h+2}\alpha^{n}\brak{\alpha - 1}\\
+\end{align}
+On subtraction,
+\begin{align}
     y_{n+1} &= y_n\alpha + \frac{2y_0}{5h+2}\delta \sbrak{n}
 \end{align}
 To check how close the approximate graph is to the actual solution, we will solve the original 
