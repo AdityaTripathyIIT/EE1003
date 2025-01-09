@@ -63,7 +63,7 @@ Find the local minimum/maximum of the given function:\\
 $f\brak{x} = x^2$
 \\
 \textbf{Solution: }\\
-We use the method of gradient descent to find the minimum/maximum of the given function, since the objective function in convex.
+We use the method of gradient descent to find the minimum/maximum of the given function, since the objective function is convex.
 Since the coefficient of $x^2 > 0$, we expect to find a local minimum.
 \begin{align}
     x_{n+1} &= x_n - \mu f^{\prime}\brak{x_n}\\
@@ -98,6 +98,6 @@ $x_{min} = 4.910792425174398e-06$
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\columnwidth]{figs/fig.png}
-    \caption{Approximate solution of the DE}
+    \caption{Minimum value of objective function}
 \end{figure}
 \end{document}  
