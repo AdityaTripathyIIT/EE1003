@@ -99,14 +99,16 @@ As a fun exercise, the given question can be posed as the following quadratic pr
 Find the point lying on the line y = 1, which is nearest to origin.
 \\ We can formulate the problem as follows:
 \begin{align}
-    \min_{\vec{x}} \norm{\vec{x} - \vec{O}}^2 &= \min_{\vec{x}} \norm{\vec{x}}^2 \\
-    &= \min_{\vec{x}} {x^2 + y^2}\\
-    \text{s.t. } e_2^{\Top}\vec{x} = 1
+    \min_{\vec{x}} \norm{e_2^{\Top}\vec{x}}^2\\
+    \text{s.t. } \\ \vec{x}^{\Top}V\vec{x} + 2\vec{u}^{\Top}\vec{x} + f = 0\\
+    V = \myvec{1 & 0 \\ 0 & 0}\\
+    \vec{u} = \myvec{0 \\ -0.5}\\
+    f = 0
 \end{align}
 
-Using cvxpy to solve the convex optimization problem, we get\\
-Optimal value of $\vec{x}$: [-0.  1.]
-Optimal objective value: 1.0
+Using scipy.minimize to solve the convex optimization problem, we get\\
+Optimal value: 0.0\\
+Optimal x: [0. 0.]
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\columnwidth]{figs/fig.png}
