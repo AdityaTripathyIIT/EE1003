@@ -94,7 +94,19 @@ Now, if $\mu$ satisfies the previous condition,
     \xrightarrow{} \lim_{n \to \infty} x_n = 0
 \end{align}
 Taking initial guess = 8\\ step size = 0.01\\ tolerance(minimum value of gradient) = 1e-5\\ We get \\
-$x_{min} = 4.910792425174398e-06$
+$x_{min} = 4.910792425174398e-06$\\
+As a fun exercise, the given question can be posed as the following quadratic programming problem:\\
+Find the point lying on the line y = 1, which is nearest to origin.
+\\ We can formulate the problem as follows:
+\begin{align}
+    \min_{\vec{x}} \norm{\vec{x} - \vec{O}}^2 &= \min_{\vec{x}} \norm{\vec{x}}^2 \\
+    &= \min_{\vec{x}} {x^2 + y^2}\\
+    \text{s.t. } e_2^{\Top}\vec{x} = 1
+\end{align}
+
+Using cvxpy to solve the convex optimization problem, we get\\
+Optimal value of $\vec{x}$: [-0.  1.]
+Optimal objective value: 1.0
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\columnwidth]{figs/fig.png}
