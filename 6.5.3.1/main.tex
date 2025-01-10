@@ -106,9 +106,21 @@ Find the point lying on the line y = 1, which is nearest to origin.
     f = 0
 \end{align}
 
-Using scipy.minimize to solve the convex optimization problem, we get\\
-Optimal value: 0.0\\
-Optimal x: [0. 0.]
+In the current form, the constraint is non-convex since the constraint defines a set which is not convex, since points on the
+line joining any 2 points on the curve don't belong to the set. However, if we become lenient and make the constraint
+\begin{align}
+    \vec{x}^{\Top}V\vec{x} + 2\vec{u}^{\Top}\vec{x} \le 0
+\end{align}
+the constraint becomes convex. Using cvxpy to solve this convex optimization problem, we get \\
+\begin{align}
+    Optimal x: [[0.00000000e+00]\\
+ [8.63053066e-11]]
+\end{align}
+    
+
+%Using scipy.minimize to solve the convex optimization problem, we get\\
+%Optimal value: 0.0\\
+%Optimal x: [0. 0.]
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\columnwidth]{figs/fig.png}
