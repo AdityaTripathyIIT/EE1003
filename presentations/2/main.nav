@@ -31,21 +31,23 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {3}{1}{5}{11/11}{Recursive Formula}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {6}{11}}
-\headcommand {\beamer@subsectionpages {7}{11}}
-\headcommand {\sectionentry {4}{Quadratic Programming}{12}{Quadratic Programming}{0}}
-\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
+\headcommand {\slideentry {3}{1}{6}{12/12}{Recursive Formula}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@sectionpages {6}{12}}
+\headcommand {\beamer@subsectionpages {7}{12}}
+\headcommand {\sectionentry {4}{Quadratic Programming}{13}{Quadratic Programming}{0}}
+\headcommand {\slideentry {4}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {4}{0}{3}{14/14}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {12}{14}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{15}{Graph}}
-\headcommand {\slideentry {4}{1}{1}{15/15}{Graph}{0}}
+\headcommand {\slideentry {4}{0}{3}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@partpages {1}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@sectionpages {12}{15}}
-\headcommand {\beamer@documentpages {15}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\beamer@subsectionpages {13}{15}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{16}{Graph}}
+\headcommand {\slideentry {4}{1}{1}{16/16}{Graph}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {1}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\gdef \inserttotalframenumber {12}}

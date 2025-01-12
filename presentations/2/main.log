@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.8)  11 JAN 2025 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.8)  12 JAN 2025 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,34 +1229,36 @@ thkerncmss.
 
 ] [12
 
+] [13
+
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
 
-Overfull \vbox (18.12897pt too high) detected at line 216
+Overfull \vbox (18.12897pt too high) detected at line 222
  []
 
-[13
+[14
 
-] [14
+] [15
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<figs/fig.png, id=129, 462.528pt x 346.896pt>
+<figs/fig.png, id=133, 462.528pt x 346.896pt>
 File: figs/fig.png Graphic file (type png)
 <use figs/fig.png>
 Package pdftex.def Info: figs/fig.png  used on input line 4.
 (pdftex.def)             Requested size: 215.10196pt x 161.32614pt.
-) [15
+) [16
 
  <./figs/fig.png>]
 \tf@nav=\write6
@@ -1273,29 +1275,40 @@ Package pdftex.def Info: figs/fig.png  used on input line 4.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DFDB01255FE2EE17AB3DC4C7DE8698BC;661.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: DFDB01255FE2EE17AB3DC4C7DE8698BC;661
+(rerunfilecheck)             After:  F2196516D3540D0F2290AF068862DFA9;661.
  ) 
 Here is how much of TeX's memory you used:
- 29981 strings out of 474116
- 584149 string characters out of 5750250
+ 29984 strings out of 474116
+ 584183 string characters out of 5750250
  1938187 words of memory out of 5000000
  51726 multiletter control sequences out of 15000+600000
  567195 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,131p,1871b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (15 pages, 124252 bytes).
+
+pdfTeX warning (dest): name{Outline0.4.1.15} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+sbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (16 pages, 124509 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

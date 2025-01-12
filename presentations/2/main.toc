@@ -1,5 +1,5 @@
 \beamer@sectionintoc {2}{Problem}{4}{0}{1}
 \beamer@sectionintoc {3}{Gradient Descent}{6}{0}{2}
 \beamer@subsectionintoc {3}{1}{Recursive Formula}{7}{0}{2}
-\beamer@sectionintoc {4}{Quadratic Programming}{12}{0}{3}
-\beamer@subsectionintoc {4}{1}{Graph}{15}{0}{3}
+\beamer@sectionintoc {4}{Quadratic Programming}{13}{0}{3}
+\beamer@subsectionintoc {4}{1}{Graph}{16}{0}{3}

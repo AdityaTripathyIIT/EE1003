@@ -1,5 +1,3 @@
-// function to generate approximate graph for the differential equation
-// y' + ay = k 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

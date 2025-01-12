@@ -179,9 +179,15 @@ Applying unilateral Z-transform,
 From the last equation, ROC is 
 \begin{align}
     |z| &> |1-2\mu|\\
-    \xrightarrow{} |1-2\mu| &> 0\\
-    \xrightarrow{} \mu \in \mathcal{R} \setminus \cbrak{\frac{1}{2}}
+    \xrightarrow{} 1 > |1-2\mu| &> 0\\
+    \xrightarrow{} \mu \in \brak{0, 1} \setminus \sbrak{\frac{1}{2}}
 \end{align}
+Equation 3.11 is due to the following theorem
+\end{frame}
+\begin{frame}
+\frametitle{Theorem}
+An LTI system is stable if and only if the ROC of its system function contains the unit circle,
+    $\abs{z} = 1$
 \end{frame}
 \begin{frame}
 \frametitle{Finding point of convergence}
