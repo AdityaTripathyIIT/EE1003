@@ -15,7 +15,6 @@ double ***get_LU(){
     double **U = make_mat();
     double **L = make_mat();
     
-    // Initialize L to identity matrix
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             L[i][j] = (i == j) ? 1 : 0;
