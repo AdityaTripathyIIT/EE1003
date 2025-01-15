@@ -101,6 +101,60 @@ For the equation at hand, the companion matrix is,
 Using the QR algorithm we can now solve for the eigenvalues and thus the solutions 
 for the given equation.
 \newline
+\begin{comment}
+Understanding QR algorithm,
+\newline
+The basic idea is to use similarity transforms
+\begin{align}
+  B = P^{-1}AP
+\end{align}
+to get the Schur decomposition, 
+\begin{align}
+  A = QUQ^{-1}
+\end{align}
+for some unitary matrix $Q$ (so that the inverse $Q^{-1}$ is also the conjugate transpose $Q^*$ 
+of $Q$), and some upper triangular matrix $U$. The diagonal entries of the $U$ matrix are 
+the eigenvalues.
+\newline
+The steps to solve QR quickly :
+\begin{enumerate}
+  \item Convert original matrix to an intermediate form (hessenberg form)
+  \item Apply givens rotation
+  \item Diagonal elements are eigenvalues
+\end{enumerate}
+Step 1:
+\newline
+Since a 2 $\times$ 2 matrix is always in Hessenberg form, we need not proceed with step 1.
+\newline 
+Step 2:
+Constructing Givens Rotation Matrix, 
+\begin{align}
+  c_k = \frac{0}{\sqrt{0^2 + 1^2}} = 0\\
+  s_k = \frac{1}{\sqrt{0^2 + 1^2}} = 1\\
+  \myvec{
+    0 & 1\\
+    -1 & 0
+  } \myvec{0 & -6 \\ 1 & 4} = \myvec{1 & 4 \\  }
+\end{align}
+Givens rotations are used to zero specific elements of a vector or matrix by rotating the vector in the plane of two coordinates. A Givens rotation matrix is defined as:
+\begin{align}
+G(i, j, \theta) =
+\myvec{
+  1 & \cdots & 0 & \cdots & 0 & \cdots & 0 \\
+  \vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+  0 & \cdots & c & \cdots & s & \cdots & 0 \\
+  \vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+  0 & \cdots & -\overline{s} & \cdots & \overline{c} & \cdots & 0 \\
+  \vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+  0 & \cdots & 0 & \cdots & 0 & \cdots & 1
+  }
+\end{align}
+  where 
+\begin{align}
+    c_k = \frac{\overline{x_i}}{\sqrt{|x_i|^2 + |x_j|^2}}\\
+    s_k = \frac{\overline{x_j}}{\sqrt{|x_i|^2 + |x_j|^2}}   
+\end{align}
+\end{comment}
 On running the code to solve for eigenvalues we get:
 \begin{verbatim}
   Upper Hessenberg Matrix

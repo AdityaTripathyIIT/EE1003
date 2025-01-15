@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define N 2
-
+//function to create L and U matrices
 double **make_mat(){
     double **mat = malloc(sizeof(double *) * N);
     for (int i = 0; i < N; i++){
@@ -14,20 +14,21 @@ double **make_mat(){
 double ***get_LU(){
     double **U = make_mat();
     double **L = make_mat();
-    
+    //initialize the L matrix to Identity matrix
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             L[i][j] = (i == j) ? 1 : 0;
         }
     }
-
+    // Take input for the U matrix
     for (int i = 0; i < N; i++){
         for(int j = 0; j < N; j++){
             scanf("%lf", &U[i][j]);
         }
     }
-
+    //Row reduction to get U
     int step_no = 0;
+  //check if pivot is zero, if yes swap with nonzero row
     while(step_no < N - 1){
         if (U[step_no][step_no] == 0) {
             int check = 0;
@@ -45,7 +46,9 @@ double ***get_LU(){
                 exit(-1);
             }
         }
+
         for(int i = step_no+1; i < N; i++){
+            //constructing L matrix as we go, l_ij = multiplier used to zero out A_ij
             double multiplier = U[i][step_no] / U[step_no][step_no];
             L[i][step_no] = multiplier;
             for(int j = step_no; j < N; j++){
@@ -60,7 +63,7 @@ double ***get_LU(){
     ret_arr[1] = U;
     return ret_arr;
 }
-
+//driver code
 int main(){
     double ***LU = get_LU();
     
