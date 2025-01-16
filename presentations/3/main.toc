@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Problem}{4}{0}{1}
+\beamer@sectionintoc {3}{Fixed Point Iteration}{6}{0}{2}
+\beamer@sectionintoc {4}{Newton Raphson Method}{11}{0}{3}
+\beamer@sectionintoc {5}{The Solution}{14}{0}{4}

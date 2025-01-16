@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Problem}{4}{0}{1}
+\beamer@sectionintoc {3}{Characteristic Polynomial}{6}{0}{2}
+\beamer@sectionintoc {4}{Understanding QR Algorithm}{10}{0}{3}
+\beamer@sectionintoc {5}{Conversion To Hessenberg Form}{14}{0}{4}
