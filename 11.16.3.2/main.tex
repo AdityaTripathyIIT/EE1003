@@ -74,6 +74,15 @@ Define a discrete random variable X = number of tails in the sequence.
   &= 1 - \frac{1}{4} = \frac{3}{4}
 \end{align}
 Simulation:
+\newline
+To run a simulation we need to generate random numbers with uniform probability, which is done
+as shown below(Algorithm taken from OpenSSL's random\_uniform.c):
+\begin{enumerate}
+  \item \text{Generate 32 bits of entropy using /dev/urandom.}
+  \item Treat this as a fixed point number in the range [0, 1)
+  \item Scale this to desired range using fixed point multiplication and treat as 64bit number(upper 32 bits integer and rest as fractional part)
+  \item Return the integer part of the fixed point numbers
+\end{enumerate}
 The following shows how the relative frequency reaches true probability with increasing number of trials of the event.
 \begin{figure}[h!]
    \centering
