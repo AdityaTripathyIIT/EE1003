@@ -62,13 +62,31 @@ A coin is tossed twice, what is the probability that atleast one tail occurs?
 \textbf{Solution: }\\
 The sample space is 
 \begin{align}
-  \Omega = \sbrak{HH, HT, TH, TT}
+  \Omega = \cbrak{HH, HT, TH, TT}
 \end{align}
 Assuming equally likely outcomes, 
 \begin{align}
   \Pr\brak{\omega \in \Omega} = \frac{1}{4}
 \end{align}
 Define a discrete random variable X = number of tails in the sequence.
+\newline
+Probability Mass Function $\Pr_{X}\brak{x}$ is given by:
+\begin{align}
+  \Pr_{X}\brak{x} = \begin{cases}
+\frac{1}{4} & x = 0\\
+    \frac{1}{2} & x = 1\\
+    \frac{1}{4} & x = 2\\
+\end{cases}
+\end{align}
+The CDF (Cumulative Distribution Function) is given by:
+\begin{align}
+  F_{X}\brak{x} = \Pr_X\brak{X \le x} = \begin{cases}
+    0 & x < 0\\
+    \frac{1}{4} & 0 \le x < 1\\
+    \frac{3}{4} & 1 \le x < 2\\
+    1 & x >=2
+  \end{cases}
+\end{align}
 \begin{align}
   \Pr\brak{X \ge 1} &= 1 - \Pr\brak{X < 1}\\
   &= 1 - \frac{1}{4} = \frac{3}{4}
@@ -89,4 +107,15 @@ The following shows how the relative frequency reaches true probability with inc
    \includegraphics[width=0.7\columnwidth]{figs/fig.png}
     \caption{Relative Frequency tends to True Probability}
 \end{figure}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\columnwidth]{figs/fig1.png}
+    \caption{Probability Mass Function}
+\end{figure}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\columnwidth]{figs/fig2.png}
+    \caption{Cumulative Distribution Function}
+\end{figure}
 \end{document}
+
