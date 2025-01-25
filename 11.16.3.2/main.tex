@@ -135,42 +135,24 @@ where,
 	\end{cases}
 \end{align}
 \begin{align}
-  \pr{X = x} = \begin{cases}
-    p = \frac{1}{2} & x = 0\\
-    1-p = \frac{1}{2} & x = 1
+  \Pr_X\brak{n} = \begin{cases}
+    p = \frac{1}{2} & n = 0\\
+    1-p = \frac{1}{2} & n = 1
   \end{cases}
 \end{align}
-\begin{table}[htbp]
-	\centering\begin{tabular}{|c|c|c|}
-    \hline
-		$X_1 \rightarrow X_2 \downarrow$ & 0 & 1\\
-		\hline
-		0 & $\frac{1}{4}$ & $\frac{1}{4}$\\
-		\hline
-		1 & $\frac{1}{4}$ & $\frac{1}{4}$\\
-    \hline
-	\end{tabular}
-	\caption{Joint PMF Table}
-\end{table}
-More generally for $X_1 = a, X_2 = b$ associated probability is $p^a\brak{1-p}^b$
-\newline
-Now, 
+Our random variable is a sum of a two bernoulli random variables
 \begin{align}
-  \Pr\brak{X \ge 1} &= \Pr_{X_1 X_2}\brak{X_1 = 0, X_2 = 1} + \Pr_{X_1 X_2}\brak{X_1 = 1, X_2 = 0} + 
-\Pr_{X_1 X_2}\brak{X_1 = 1, X_2 = 1}\\
-  \Rightarrow \Pr\brak{X \ge 1} &= \frac{3}{4}\\
+  Y = X_1 + X_2
 \end{align}
-Before we tackle the general case we need to state the following theorm from combinatorics
+Using properties of Z transform of PMF,
 \begin{align}
-  x_1 + x_2 \cdots x_n = k, x_i \in \cbrak{0, 1}
+  M_Y\brak{z} &= M_{X_1}\brak{z}M_{X_2}\brak{z}\\
+  M_{X_1}\brak{z} &= \sum_{n = -\infty}^{\infty} \Pr_{X_1}\brak{n}z^{-n} = p + \brak{1-p}z^{-1}\\
+  M_{X_2}\brak{z} &= \sum_{n = -\infty}^{\infty} \Pr_{X_2}\brak{n}z^{-n} = p + \brak{1-p}z^{-1}\\
+  M_Y\brak{z} &= \brak{p + \brak{1-p}z^{-1}}^2\\
+              &= \sum_{n = -\infty}^{\infty} \comb{2}{k}p^{2-k}\brak{1-p}^{k}z^{-k}\\
+  P_Y\brak{n} &= \comb{2}{k} p^{2-k}\brak{1-p}^k
 \end{align}
-has $\comb{n}{k}$ solutions.
-\newline
-In general if a Random variable is the sum of outcomes of $n$ Bernoulli random variables, then
-\begin{align}
-  \pr{X = k} = \comb{n}{k}p^{n-k}\brak{1-p}^{k} 
-\end{align}
-which is the famous binomial random variable.
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\columnwidth]{figs/binomial.png}
@@ -178,3 +160,4 @@ which is the famous binomial random variable.
 \end{figure}
 The blue plot is the $n = 2$ case and red plot is the $n = 10$ case.
 \end{document}
+
