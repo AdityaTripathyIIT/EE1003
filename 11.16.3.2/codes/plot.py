@@ -4,15 +4,16 @@ import matplotlib.pyplot as plt
 gen = ctypes.CDLL('./sim.so')
 
 gen.run_sim.argtypes = [
-        ctypes.c_int, ctypes.POINTER(ctypes.c_double)
+        ctypes.c_int, ctypes.c_double, ctypes.POINTER(ctypes.c_double)
 ]
 
 gen.run_sim.restype = None
+p = 0.5
 max_tosses = 20000
 points = np.zeros((max_tosses, 2), dtype=np.double)
 
 gen.run_sim(
-    int(max_tosses/2), 
+    int(max_tosses/2), p, 
     points.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
 )
 fig = plt.figure()
