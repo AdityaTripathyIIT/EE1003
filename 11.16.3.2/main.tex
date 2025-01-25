@@ -60,7 +60,7 @@
 A coin is tossed twice, what is the probability that atleast one tail occurs?
 \\
 \textbf{Solution :}\\
-Let Y be the random variable representing the number of tails. Y can the represented the sum of two bernoulli random variables, $X_1, X_2$,
+Let Y be the random variable representing the number of tails. Y can be represented as the sum of two bernoulli random variables, $X_1, X_2$,
 \begin{align}
   Y = X_1 + X_2
 \end{align}
@@ -110,10 +110,9 @@ Simulation:
 To run a simulation we need to generate random numbers with uniform probability, which is done
 as shown below(Algorithm taken from OpenSSL's random\_uniform.c):
 \begin{enumerate}
-  \item \text{Generate 32 bits of entropy using /dev/urandom.}
-  \item Treat this as a fixed point number in the range [0, 1)
-  \item Scale this to desired range using fixed point multiplication and treat as 64bit number(upper 32 bits integer and rest as fractional part)
-  \item Return the integer part of the fixed point numbers
+  \item \text{Generate 1byte(8 bits) of entropy using OpenSSL/rand.h.}
+  \item Scale down this number in the range [0, 255] to [0, 1]by dividing by 255.
+  \item Return 0 if the scaled down number is less than p and return 1 otherwise. 
 \end{enumerate}
 The following shows how the relative frequency reaches true probability with increasing number of trials of the event. The blue plot is the $n = 2$ case and red plot is the $n = 10$ case.
 \begin{figure}[h!]
