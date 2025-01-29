@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Problem}{4}{0}{1}
+\beamer@sectionintoc {3}{Defining the random variables}{6}{0}{2}
+\beamer@sectionintoc {4}{CDF of binomial distribution}{11}{0}{3}
+\beamer@sectionintoc {5}{Simulating random bits with known bias}{14}{0}{4}

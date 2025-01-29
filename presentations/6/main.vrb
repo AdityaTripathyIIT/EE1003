@@ -1,0 +1,6 @@
+\frametitle{Graph}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig.png}
+   \caption{Minimum Value of Objective function}
+\end{figure}
